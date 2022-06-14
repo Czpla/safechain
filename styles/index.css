@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+html, body {
+    height: 100vh;
+    width: 100vw;
+}
+
+header {
+    background-color: #090E27;
+    height: 300px;
+    padding: 100px 12vw;
+    display: flex;
+    align-items: center;
+}
+
+header h1 {
+    color: #FFFF;
+    padding: 50px;
+}
+
+header img {
+    height: 60%;
+    width: 60%;
+}
+
+main {
+    padding: 150px 12vw;
+}
+
+form .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+    grid-template-areas: 
+        'name name'
+        'birth city'
+        'state country'
+        'submit submit';
+}
+
+form label {
+    display: block;
+    padding-left: 16px;
+    padding-bottom: 10px;
+}
+
+.input input {
+    width: 100%;
+    height: 60px;
+
+    background: #8b8d9a0d;
+    border: 1px solid #8b8d9a66;
+    border-radius: 10px;
+
+    padding: 10px 20px;
+}
+
+.input-name {
+    grid-area: name;
+}
+
+.input-birth {
+    grid-area: birth;
+}
+
+.input-city {
+    grid-area: city;
+}
+
+.input-state {
+    grid-area: state;
+}
+
+.input-country {
+    grid-area: country;
+}
+
+.button-submit {
+    grid-area: submit;
+    margin-top: 20px;
+    height: 60px;
+    width: 50%;
+    background: #6A33F5;
+    border-radius: 10px;
+    color: #FFFF;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.button-submit:hover {
+    background: #6a33f5e1;
+}
+
+@media (max-width: 1200px) {
+    form .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        column-gap: 20px;
+        row-gap: 20px;
+        grid-template-areas: 
+            'name name'
+            'birth city'
+            'state country'
+            'submit';
+    }
+}

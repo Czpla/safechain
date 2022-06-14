@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/index.css">
+    <title>SafeChain</title>
+</head>
+<body>
+    <header>
+        <a href="/"><img src="./assets/arrow-back.png" alt="back-page"></a>
+        <h1>Cadastrar novo</h1>
+    </header>
+    <main>
+        <form action="submit">
+            <div class="grid">
+                <div class="input input-name">
+                    <label for="name">Nome</label>
+                    <input type="text" name="name" id="name" required>
+                </div>
+                <div class="input input-birth">
+                    <label for="birth">Nascimento</label>
+                    <input type="date" value="1997-06-13" name="birth" id="birth" required>
+                </div>
+                <div class="input input-city">
+                    <label for="city">Cidade</label>
+                    <input type="text" name="city" id="city" required>
+                </div>
+                <div class="input input-state">
+                    <label for="state">Estado</label>
+                    <input type="text" name="state" id="state" required>
+                </div>
+                <div class="input input-country">
+                    <label for="country">País</label>
+                    <input type="text" name="country" id="country" required>
+                </div>
+                <button class="button-submit" type="submit">Confirmar</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
